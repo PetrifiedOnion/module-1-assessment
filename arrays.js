@@ -39,20 +39,18 @@ const bigOrSmallArray = [1, 99, 42, 69, 102, -10, 159, 352];
 // CODE HERE
 const answers = [];
 // for (i = 0; bigOrSmallArray.length > 100; i++) {
-  // if (bigOrSmallArray.length > 100)  answers.push('big');
+// if (bigOrSmallArray.length > 100)  answers.push('big');
 
-  // if (bigOrSmallArray.length <= 100)  answers.push('small');
-  
+// if (bigOrSmallArray.length <= 100)  answers.push('small');
+
 // }
-if(bigOrSmallArray.length > 100){
-  for(let i = 0; i > bigOrSmallArray.length; i++)
-  answers.push('big')
-}
-if(bigOrSmallArray.length <= 100){
-  for(let i = 0; i <= bigOrSmallArray.length; i++)
-  answers.push('small')
-}
+for (let i = 0; i < bigOrSmallArray.length; i++){
+  if (bigOrSmallArray[i] > 100) {
+    answers.push("big");
+  } else {
+    answers.push("small");
+  }
 
-
-console.log(bigOrSmallArray, "bigOrSmallArray");
-console.log(answers, "answers arr");
+console.log(bigOrSmallArray, 'bigOrSmallArray');
+console.log(answers, 'answers arr');
+}
